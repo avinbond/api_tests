@@ -1,0 +1,569 @@
+{
+	"id": "ba928cdc-53af-2176-5422-43b5c421e183",
+	"name": "Blippar",
+	"allTests": [],
+	"timestamp": 1469206739000,
+	"collection_id": "9ae88d4b-476b-23a5-4a22-ac09ddec11a9",
+	"folder_id": null,
+	"target_type": "collection",
+	"environment_id": null,
+	"data": null,
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "9ae88d4b-476b-23a5-4a22-ac09ddec11a9",
+		"name": "Blippar",
+		"description": "",
+		"order": [
+			"b9d953f6-b515-aa1b-045a-df3688a8d414",
+			"c9319895-8807-46bb-d67e-7d7411940aac",
+			"d60f47a9-44d5-ffdb-7953-6aa3bb51ae58",
+			"0885a3fe-f107-e89a-a6da-f868c4600172",
+			"110d8fe4-b219-6f57-fe63-782609b68b73",
+			"b65b7d4c-8c81-ceb2-434f-7c43d44cfad9"
+		],
+		"folders": [],
+		"requests": [
+			{
+				"owner": "59581",
+				"lastUpdatedBy": "59581",
+				"lastRevision": 398855712,
+				"folder": null,
+				"id": "0885a3fe-f107-e89a-a6da-f868c4600172",
+				"name": "Reco- staging",
+				"dataMode": "params",
+				"data": null,
+				"rawModeData": null,
+				"descriptionFormat": "html",
+				"description": "",
+				"headers": "",
+				"method": "GET",
+				"pathVariables": {},
+				"url": "https://reco-stg.blippar.com/blippData/5d3e83e3cc8079610f4ceb5c8771916a",
+				"preRequestScript": null,
+				"tests": "tests[\"Body matches string\"] = responseBody.has(\"Keyboard layout\");\n",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"createdAt": "2016-07-15T14:27:47.000Z",
+				"updatedAt": "2016-07-15T16:28:59.000Z",
+				"collectionId": "9ae88d4b-476b-23a5-4a22-ac09ddec11a9",
+				"write": true
+			},
+			{
+				"owner": "59581",
+				"lastUpdatedBy": "59581",
+				"lastRevision": 398854535,
+				"folder": null,
+				"id": "110d8fe4-b219-6f57-fe63-782609b68b73",
+				"name": "Reco- live",
+				"dataMode": "params",
+				"data": null,
+				"rawModeData": null,
+				"descriptionFormat": "html",
+				"description": "",
+				"headers": "",
+				"method": "GET",
+				"pathVariables": {},
+				"url": "https://reco.blippar.com/blippData/5d3e83e3cc8079610f4ceb5c8771916a",
+				"preRequestScript": null,
+				"tests": "tests[\"Body matches string\"] = responseBody.has(\"Keyboard layout\");\n",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"createdAt": "2016-07-15T16:28:05.000Z",
+				"updatedAt": "2016-07-15T16:28:15.000Z",
+				"collectionId": "9ae88d4b-476b-23a5-4a22-ac09ddec11a9",
+				"write": true
+			},
+			{
+				"owner": "59581",
+				"lastUpdatedBy": "59581",
+				"lastRevision": 398713096,
+				"folder": null,
+				"id": "b65b7d4c-8c81-ceb2-434f-7c43d44cfad9",
+				"name": "Custom blipp - butterfly",
+				"dataMode": "params",
+				"data": null,
+				"rawModeData": null,
+				"descriptionFormat": "html",
+				"description": "",
+				"headers": "",
+				"method": "POST",
+				"pathVariables": {},
+				"url": "http://ocr.blippar.com/butterfly/scan",
+				"preRequestScript": null,
+				"tests": "tests[\"Body matches string\"] = responseBody.has(\"butterflyTexture.jpg\");",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"createdAt": "2016-07-15T15:26:12.000Z",
+				"updatedAt": "2016-07-15T15:26:12.000Z",
+				"collectionId": "9ae88d4b-476b-23a5-4a22-ac09ddec11a9",
+				"write": true
+			},
+			{
+				"owner": "59581",
+				"lastUpdatedBy": "59581",
+				"lastRevision": 403327894,
+				"folder": null,
+				"id": "b9d953f6-b515-aa1b-045a-df3688a8d414",
+				"name": "Trending ",
+				"dataMode": "params",
+				"data": null,
+				"rawModeData": null,
+				"descriptionFormat": "html",
+				"description": "Currently Trending is uploaded my product team\nGoing forward this will be automated",
+				"headers": "Authorization: dd14f8953034e535eda531b40e02c16ba09bfa0a4816039e7bb269588dd0bee9\n",
+				"method": "GET",
+				"pathVariables": {},
+				"url": "https://thorin.blippar.com/explore",
+				"preRequestScript": null,
+				"tests": "tests[\"Body matches string\"] = responseBody.has(\"LastUpdate\");",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"createdAt": "2016-06-24T12:10:05.000Z",
+				"updatedAt": "2016-07-18T15:28:25.000Z",
+				"collectionId": "9ae88d4b-476b-23a5-4a22-ac09ddec11a9",
+				"write": true
+			},
+			{
+				"owner": "59581",
+				"lastUpdatedBy": "59581",
+				"lastRevision": 403321822,
+				"folder": null,
+				"id": "c9319895-8807-46bb-d67e-7d7411940aac",
+				"name": "Location",
+				"dataMode": "params",
+				"data": null,
+				"rawModeData": null,
+				"descriptionFormat": "html",
+				"description": "",
+				"headers": "",
+				"method": "GET",
+				"pathVariables": {},
+				"url": "https://www3.blippar.com//service/ar/sync_getCurrentLocation.php?lat=0.000000&lng=0.000000&version=1.2",
+				"preRequestScript": null,
+				"tests": "tests[\"Body matches string\"] = responseBody.has(\"gb\");",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"createdAt": "2016-07-15T13:57:18.000Z",
+				"updatedAt": "2016-07-18T15:26:18.000Z",
+				"collectionId": "9ae88d4b-476b-23a5-4a22-ac09ddec11a9",
+				"write": true
+			},
+			{
+				"owner": "59581",
+				"lastUpdatedBy": "59581",
+				"lastRevision": 398537602,
+				"folder": null,
+				"id": "d60f47a9-44d5-ffdb-7953-6aa3bb51ae58",
+				"name": "Telemetry",
+				"dataMode": "params",
+				"data": null,
+				"rawModeData": null,
+				"descriptionFormat": "html",
+				"description": "",
+				"headers": "",
+				"method": "POST",
+				"pathVariables": {},
+				"url": "https://telemetry.blippar.com/post",
+				"preRequestScript": null,
+				"tests": "tests[\"Successful POST request\"] = responseCode.code === 200 || responseCode.code === 200;",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"createdAt": "2016-07-15T14:18:27.000Z",
+				"updatedAt": "2016-07-15T14:18:27.000Z",
+				"collectionId": "9ae88d4b-476b-23a5-4a22-ac09ddec11a9",
+				"write": true
+			}
+		],
+		"timestamp": 0,
+		"synced": true,
+		"syncedFilename": "",
+		"remote_id": "0",
+		"remoteLink": "https://www.getpostman.com/collections/8d3764bddbbab750a395",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"owner": "59581",
+		"subscribed": false,
+		"createdAt": "2016-06-24T12:04:51.000Z",
+		"updatedAt": "2016-07-18T15:28:25.000Z",
+		"write": true,
+		"isDeleted": false,
+		"published": false,
+		"favorite": true,
+		"permissions": {},
+		"syncedPermissions": {},
+		"sharedWithTeam": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": null,
+	"results": [
+		{
+			"id": "b9d953f6-b515-aa1b-045a-df3688a8d414",
+			"name": "Trending ",
+			"url": "https://thorin.blippar.com/explore",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				67
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			],
+			"time": 67,
+			"totalRequestTime": 67,
+			"iterationResults": {}
+		},
+		{
+			"id": "c9319895-8807-46bb-d67e-7d7411940aac",
+			"name": "Location",
+			"url": "https://www3.blippar.com//service/ar/sync_getCurrentLocation.php?lat=0.000000&lng=0.000000&version=1.2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				662
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			],
+			"time": 662,
+			"totalRequestTime": 662,
+			"iterationResults": {}
+		},
+		{
+			"id": "d60f47a9-44d5-ffdb-7953-6aa3bb51ae58",
+			"name": "Telemetry",
+			"url": "https://telemetry.blippar.com/post",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				986
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			],
+			"time": 986,
+			"totalRequestTime": 986,
+			"iterationResults": {}
+		},
+		{
+			"id": "0885a3fe-f107-e89a-a6da-f868c4600172",
+			"name": "Reco- staging",
+			"url": "https://reco-stg.blippar.com/blippData/5d3e83e3cc8079610f4ceb5c8771916a",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				688
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			],
+			"time": 688,
+			"totalRequestTime": 688,
+			"iterationResults": {}
+		},
+		{
+			"id": "110d8fe4-b219-6f57-fe63-782609b68b73",
+			"name": "Reco- live",
+			"url": "https://reco.blippar.com/blippData/5d3e83e3cc8079610f4ceb5c8771916a",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				133
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			],
+			"time": 133,
+			"totalRequestTime": 133,
+			"iterationResults": {}
+		},
+		{
+			"id": "b65b7d4c-8c81-ceb2-434f-7c43d44cfad9",
+			"name": "Custom blipp - butterfly",
+			"url": "http://ocr.blippar.com/butterfly/scan",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				199
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			],
+			"time": 199,
+			"totalRequestTime": 199,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 6,
+	"totalFail": 0,
+	"totalTime": 2735,
+	"lifecycle": "idle",
+	"willStop": false,
+	"owner": "59581",
+	"lastUpdatedBy": "59581",
+	"lastRevision": 417111325,
+	"createdAt": "2016-07-22T16:58:59.000Z",
+	"updatedAt": "2016-07-22T16:58:59.000Z",
+	"requests": [
+		{
+			"name": "Trending ",
+			"id": "b9d953f6-b515-aa1b-045a-df3688a8d414",
+			"url": "https://thorin.blippar.com/explore",
+			"time": 67,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Body matches string"
+			],
+			"gridData": [
+				[
+					true
+				]
+			],
+			"tests": {
+				"Body matches string": true
+			}
+		},
+		{
+			"name": "Location",
+			"id": "c9319895-8807-46bb-d67e-7d7411940aac",
+			"url": "https://www3.blippar.com//service/ar/sync_getCurrentLocation.php?lat=0.000000&lng=0.000000&version=1.2",
+			"time": 662,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Body matches string"
+			],
+			"gridData": [
+				[
+					true
+				]
+			],
+			"tests": {
+				"Body matches string": true
+			}
+		},
+		{
+			"name": "Telemetry",
+			"id": "d60f47a9-44d5-ffdb-7953-6aa3bb51ae58",
+			"url": "https://telemetry.blippar.com/post",
+			"time": 986,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Successful POST request"
+			],
+			"gridData": [
+				[
+					true
+				]
+			],
+			"tests": {
+				"Successful POST request": true
+			}
+		},
+		{
+			"name": "Reco- staging",
+			"id": "0885a3fe-f107-e89a-a6da-f868c4600172",
+			"url": "https://reco-stg.blippar.com/blippData/5d3e83e3cc8079610f4ceb5c8771916a",
+			"time": 688,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Body matches string"
+			],
+			"gridData": [
+				[
+					true
+				]
+			],
+			"tests": {
+				"Body matches string": true
+			}
+		},
+		{
+			"name": "Reco- live",
+			"id": "110d8fe4-b219-6f57-fe63-782609b68b73",
+			"url": "https://reco.blippar.com/blippData/5d3e83e3cc8079610f4ceb5c8771916a",
+			"time": 133,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Body matches string"
+			],
+			"gridData": [
+				[
+					true
+				]
+			],
+			"tests": {
+				"Body matches string": true
+			}
+		},
+		{
+			"name": "Custom blipp - butterfly",
+			"id": "b65b7d4c-8c81-ceb2-434f-7c43d44cfad9",
+			"url": "http://ocr.blippar.com/butterfly/scan",
+			"time": 199,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Body matches string"
+			],
+			"gridData": [
+				[
+					true
+				]
+			],
+			"tests": {
+				"Body matches string": true
+			}
+		}
+	],
+	"synced": false
+}
